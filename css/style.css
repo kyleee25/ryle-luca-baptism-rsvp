@@ -129,3 +129,47 @@ button:hover{
     color:black;
 
 }
+
+.welcome{
+
+    background:#F8F6F2;
+
+    padding:120px 20px;
+
+}
+
+.container{
+
+    width:min(900px,90%);
+
+    margin:auto;
+
+    text-align:center;
+
+}
+
+.welcome h2{
+
+    font-family:"Playfair Display",serif;
+
+    font-size:52px;
+
+    margin-bottom:30px;
+
+    color:#3E3A39;
+
+}
+
+.welcome p{
+
+    font-size:18px;
+
+    line-height:2;
+
+    color:#666;
+
+    max-width:700px;
+
+    margin:0 auto 20px;
+
+}
