@@ -322,3 +322,130 @@ button:hover {
     }
 
 }
+
+/* =========================
+   EVENT DETAILS
+========================= */
+
+.event-details {
+    padding: 120px 20px;
+    background: #ffffff;
+    text-align: center;
+}
+
+.event-content {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.event-details .section-label {
+    margin-bottom: 20px;
+
+    font-size: 11px;
+    letter-spacing: 5px;
+    font-weight: 500;
+
+    color: #8a8178;
+}
+
+.event-details h2 {
+    margin-bottom: 60px;
+
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 42px;
+    font-weight: 400;
+
+    color: #3f3a36;
+}
+
+.event-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.event-card {
+    padding: 55px 40px;
+
+    border: 1px solid #e4dfd8;
+
+    background: #f8f6f2;
+}
+
+.event-label {
+    margin-bottom: 25px;
+
+    font-size: 11px;
+    letter-spacing: 4px;
+    font-weight: 500;
+
+    color: #8a8178;
+}
+
+.event-card h3 {
+    margin-bottom: 15px;
+
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 42px;
+    font-weight: 400;
+
+    color: #403a35;
+}
+
+.event-venue {
+    margin-bottom: 25px;
+
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 24px;
+
+    color: #5e8fb8;
+}
+
+.event-description {
+    max-width: 400px;
+    margin: 0 auto;
+
+    font-size: 15px;
+    line-height: 1.9;
+
+    color: #6d6762;
+}
+
+
+/* =========================
+   EVENT DETAILS - MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+    .event-details {
+        padding: 90px 20px;
+    }
+
+    .event-details h2 {
+        font-size: 32px;
+        line-height: 1.4;
+        margin-bottom: 45px;
+    }
+
+    .event-cards {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .event-card {
+        padding: 45px 25px;
+    }
+
+    .event-card h3 {
+        font-size: 36px;
+    }
+
+    .event-venue {
+        font-size: 21px;
+    }
+
+}
