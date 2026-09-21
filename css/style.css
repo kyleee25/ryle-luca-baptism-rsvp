@@ -79,11 +79,20 @@ button:hover {
     color:black;
 }
 
+
+/* =========================
+   WELCOME / PARENTS' MESSAGE
+========================= */
+
 .welcome {
 
-    background:#F8F6F2;
+    padding: 120px 20px;
 
-    padding:120px 20px;
+    background:
+        url("../images/gallery-background2.png")
+        center center / cover no-repeat;
+
+    text-align: center;
 
 }
 
@@ -93,67 +102,55 @@ button:hover {
     text-align:center;
 }
 
-.welcome h2 {
-    font-family:"Playfair Display",serif;
-    font-size:52px;
-    margin-bottom:30px;
-    color:#3E3A39;
-}
-
-.welcome p {
-    font-size:18px;
-    line-height:2;
-    color:#666;
-    max-width:700px;
-    margin:0 auto 20px;
-}
-
-/* =========================
-   PARENTS' MESSAGE
-========================= */
-
-.parents-message {
-    padding: 110px 20px;
-    background: #f8f6f2;
-    text-align: center;
-}
-
-.section-content {
-    max-width: 760px;
-    margin: 0 auto;
-}
-
-.section-label {
+.welcome .section-label {
     margin-bottom: 18px;
-    font-size: 12px;
-    letter-spacing: 4px;
+
+    font-size: 11px;
+    letter-spacing: 5px;
     font-weight: 500;
+
     color: #8a8178;
 }
 
-.parents-message h2 {
+.welcome h2 {
+
     margin-bottom: 35px;
-    font-family: Georgia, "Times New Roman", serif;
+
+    font-family: "Playfair Display", Georgia, serif;
+
     font-size: 48px;
     font-weight: 400;
+
     color: #3f3a36;
+
 }
 
-.parents-message p:not(.section-label):not(.parents-signature) {
-    margin: 0 auto 24px;
+.welcome p:not(.section-label):not(.parents-signature) {
+
     max-width: 680px;
+
+    margin: 0 auto 24px;
+
     font-size: 17px;
     line-height: 1.9;
+
     color: #66605b;
+
 }
 
 .parents-signature {
+
     margin-top: 45px;
+
     font-family: Georgia, "Times New Roman", serif;
+
     font-size: 18px;
     line-height: 1.8;
+
     color: #4a443f;
+
 }
+
 
 /* =========================
    BIBLE VERSE
@@ -206,6 +203,7 @@ button:hover {
     letter-spacing: 3px;
     color: #716961;
 }
+
 
 /* =========================
    COUNTDOWN
@@ -324,12 +322,18 @@ button:hover {
 }
 
 /* =========================
-   EVENT DETAILS
+   EVENT & ATTIRE
 ========================= */
 
 .event-details {
     padding: 120px 20px;
-    background: #ffffff;
+
+    background-color: #f8fbfd;
+    background-image: url("../images/gallery-background5.png");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
     text-align: center;
 }
 
@@ -363,20 +367,35 @@ button:hover {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
+
     max-width: 900px;
     margin: 0 auto;
 }
 
 .event-card {
-    padding: 55px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-    border: 1px solid #e4dfd8;
+    padding: 50px 40px;
 
-    background: #f8f6f2;
+    border: 1px solid #ded8d1;
+
+    background: #ffffff;
+
+    min-height: 590px;
+}
+
+.event-icon {
+    margin-bottom: 22px;
+
+    font-size: 18px;
+
+    color: #9a8d80;
 }
 
 .event-label {
-    margin-bottom: 25px;
+    margin-bottom: 22px;
 
     font-size: 11px;
     letter-spacing: 4px;
@@ -386,7 +405,7 @@ button:hover {
 }
 
 .event-card h3 {
-    margin-bottom: 15px;
+    margin-bottom: 12px;
 
     font-family: "Playfair Display", Georgia, serif;
     font-size: 42px;
@@ -396,7 +415,7 @@ button:hover {
 }
 
 .event-venue {
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 
     font-family: "Playfair Display", Georgia, serif;
     font-size: 24px;
@@ -404,8 +423,28 @@ button:hover {
     color: #5e8fb8;
 }
 
+.attire-divider {
+    width: 45px;
+    height: 1px;
+
+    margin-bottom: 28px;
+
+    background: #d8d1c9;
+}
+
+.event-card h4 {
+    margin-bottom: 18px;
+
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 30px;
+    font-weight: 400;
+
+    color: #403a35;
+}
+
 .event-description {
     max-width: 400px;
+
     margin: 0 auto;
 
     font-size: 15px;
@@ -414,9 +453,23 @@ button:hover {
     color: #6d6762;
 }
 
+.event-note {
+    max-width: 400px;
+
+    margin-top: auto;
+
+    padding-top: 28px;
+
+    font-size: 14px;
+    line-height: 1.7;
+    font-weight: 500;
+
+    color: #5e8fb8;
+}
+
 
 /* =========================
-   EVENT DETAILS - MOBILE
+   EVENT & ATTIRE - MOBILE
 ========================= */
 
 @media (max-width: 768px) {
@@ -437,6 +490,8 @@ button:hover {
     }
 
     .event-card {
+        min-height: auto;
+
         padding: 45px 25px;
     }
 
@@ -448,148 +503,13 @@ button:hover {
         font-size: 21px;
     }
 
-}
-
-/* =========================
-   DRESS CODE
-========================= */
-
-.dress-code {
-    padding: 120px 20px;
-    background: #f8f6f2;
-    text-align: center;
-}
-
-.dress-content {
-    width: 100%;
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-.dress-code .section-label {
-    margin-bottom: 20px;
-
-    font-size: 11px;
-    letter-spacing: 5px;
-    font-weight: 500;
-
-    color: #8a8178;
-}
-
-.dress-code h2 {
-    margin-bottom: 25px;
-
-    font-family: "Playfair Display", Georgia, serif;
-    font-size: 42px;
-    font-weight: 400;
-
-    color: #3f3a36;
-}
-
-.dress-intro {
-    max-width: 650px;
-    margin: 0 auto 60px;
-
-    font-size: 16px;
-    line-height: 1.9;
-
-    color: #6d6762;
-}
-
-.dress-cards {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
-
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-.dress-card {
-    padding: 55px 40px;
-
-    background: #ffffff;
-    border: 1px solid #e4dfd8;
-}
-
-.dress-icon {
-    margin-bottom: 25px;
-
-    font-size: 18px;
-
-    color: #9a8d80;
-}
-
-.dress-label {
-    margin-bottom: 20px;
-
-    font-size: 11px;
-    letter-spacing: 4px;
-    font-weight: 500;
-
-    color: #8a8178;
-}
-
-.dress-card h3 {
-    margin-bottom: 20px;
-
-    font-family: "Playfair Display", Georgia, serif;
-    font-size: 30px;
-    font-weight: 400;
-
-    color: #403a35;
-}
-
-.dress-card p:not(.dress-label):not(.dress-note) {
-    max-width: 400px;
-    margin: 0 auto;
-
-    font-size: 15px;
-    line-height: 1.9;
-
-    color: #6d6762;
-}
-
-.dress-note {
-    margin-top: 25px;
-
-    font-size: 14px;
-    line-height: 1.7;
-    font-weight: 500;
-
-    color: #5e8fb8;
-}
-
-
-/* =========================
-   DRESS CODE - MOBILE
-========================= */
-
-@media (max-width: 768px) {
-
-    .dress-code {
-        padding: 90px 20px;
-    }
-
-    .dress-code h2 {
-        font-size: 34px;
-    }
-
-    .dress-intro {
-        margin-bottom: 45px;
-    }
-
-    .dress-cards {
-        grid-template-columns: 1fr;
-        gap: 25px;
-    }
-
-    .dress-card {
-        padding: 45px 25px;
-    }
-
-    .dress-card h3 {
+    .event-card h4 {
         font-size: 27px;
+    }
+
+    .event-note {
+        margin-top: 28px;
+        padding-top: 0;
     }
 
 }
@@ -1022,6 +942,7 @@ button:hover {
     }
 
 }
+
 
 /* =========================
    RSVP
