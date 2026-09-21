@@ -1022,3 +1022,496 @@ button:hover {
     }
 
 }
+
+/* =========================
+   RSVP
+========================= */
+
+.rsvp {
+    padding: 120px 20px;
+
+    background: #f8f6f2;
+
+    text-align: center;
+}
+
+.rsvp-content {
+    width: 100%;
+    max-width: 800px;
+
+    margin: 0 auto;
+}
+
+
+/* =========================
+   RSVP HEADER
+========================= */
+
+.rsvp .section-label {
+    margin-bottom: 18px;
+
+    font-size: 11px;
+    letter-spacing: 5px;
+    font-weight: 500;
+
+    color: #5e8fb8;
+}
+
+.rsvp h2 {
+    margin-bottom: 20px;
+
+    font-family: "Playfair Display", Georgia, serif;
+
+    font-size: 52px;
+    line-height: 1.2;
+    font-weight: 400;
+
+    color: #3f3a36;
+}
+
+.rsvp-intro {
+    max-width: 600px;
+
+    margin: 0 auto 50px;
+
+    font-size: 16px;
+    line-height: 1.9;
+
+    color: #6d6762;
+}
+
+
+/* =========================
+   INVITATION LOOKUP
+========================= */
+
+.rsvp-lookup {
+    max-width: 600px;
+
+    margin: 0 auto;
+}
+
+.rsvp-lookup label,
+.rsvp-message label {
+    display: block;
+
+    margin-bottom: 12px;
+
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    color: #6d6762;
+}
+
+.rsvp-code-row {
+    display: flex;
+
+    gap: 12px;
+}
+
+.rsvp-code-row input {
+    flex: 1;
+
+    min-width: 0;
+
+    padding: 16px 18px;
+
+    border: 1px solid #d8d1c9;
+
+    background: #ffffff;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+
+    color: #403a35;
+
+    outline: none;
+
+    transition:
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.rsvp-code-row input:focus {
+    border-color: #8eb6d2;
+
+    box-shadow:
+        0 0 0 3px rgba(94, 143, 184, 0.10);
+}
+
+.rsvp-code-row button {
+    padding: 16px 28px;
+
+    border: 1px solid #5e8fb8;
+
+    background: #5e8fb8;
+
+    color: #ffffff;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    cursor: pointer;
+
+    transition:
+        background 0.3s ease,
+        transform 0.3s ease;
+}
+
+.rsvp-code-row button:hover {
+    background: #4d7fa8;
+
+    transform: translateY(-1px);
+}
+
+
+/* =========================
+   RSVP ERROR
+========================= */
+
+.rsvp-error {
+    min-height: 22px;
+
+    margin-top: 12px;
+
+    font-size: 13px;
+
+    color: #a05a5a;
+}
+
+
+/* =========================
+   RSVP FORM
+========================= */
+
+.rsvp-form-container {
+    max-width: 650px;
+
+    margin: 60px auto 0;
+}
+
+.guest-welcome {
+    margin-bottom: 45px;
+
+    padding-bottom: 30px;
+
+    border-bottom: 1px solid #ded8d1;
+}
+
+.guest-label {
+    margin-bottom: 10px;
+
+    font-size: 10px;
+    letter-spacing: 4px;
+
+    color: #8a8178;
+}
+
+.guest-welcome h3 {
+    font-family: "Playfair Display", Georgia, serif;
+
+    font-size: 34px;
+    font-weight: 400;
+
+    color: #403a35;
+}
+
+
+/* =========================
+   RSVP QUESTION
+========================= */
+
+.rsvp-question {
+    margin-bottom: 40px;
+}
+
+.rsvp-question > p {
+    margin-bottom: 22px;
+
+    font-family: "Playfair Display", Georgia, serif;
+
+    font-size: 24px;
+
+    color: #403a35;
+}
+
+.rsvp-options {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 15px;
+}
+
+.rsvp-option {
+    position: relative;
+
+    cursor: pointer;
+}
+
+.rsvp-option input {
+    position: absolute;
+
+    opacity: 0;
+
+    pointer-events: none;
+}
+
+.rsvp-option span {
+    display: block;
+
+    padding: 18px 15px;
+
+    border: 1px solid #d8d1c9;
+
+    background: #ffffff;
+
+    font-size: 13px;
+
+    color: #5e5853;
+
+    transition:
+        border-color 0.3s ease,
+        background 0.3s ease,
+        color 0.3s ease;
+}
+
+.rsvp-option:hover span {
+    border-color: #8eb6d2;
+}
+
+.rsvp-option input:checked + span {
+    border-color: #5e8fb8;
+
+    background: #edf5fa;
+
+    color: #4d7fa8;
+}
+
+
+/* =========================
+   RSVP MESSAGE
+========================= */
+
+.rsvp-message {
+    margin-bottom: 30px;
+
+    text-align: left;
+}
+
+.rsvp-message label {
+    text-align: left;
+}
+
+.rsvp-message label span {
+    font-size: 10px;
+
+    letter-spacing: 0;
+
+    text-transform: none;
+
+    color: #99918a;
+}
+
+.rsvp-message textarea {
+    width: 100%;
+
+    padding: 16px 18px;
+
+    resize: vertical;
+
+    border: 1px solid #d8d1c9;
+
+    background: #ffffff;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    line-height: 1.7;
+
+    color: #403a35;
+
+    outline: none;
+
+    transition:
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.rsvp-message textarea:focus {
+    border-color: #8eb6d2;
+
+    box-shadow:
+        0 0 0 3px rgba(94, 143, 184, 0.10);
+}
+
+
+/* =========================
+   RSVP SUBMIT
+========================= */
+
+.rsvp-submit {
+    width: 100%;
+
+    padding: 17px 25px;
+
+    border: 1px solid #5e8fb8;
+
+    background: #5e8fb8;
+
+    color: #ffffff;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 12px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+
+    cursor: pointer;
+
+    transition:
+        background 0.3s ease,
+        transform 0.3s ease;
+}
+
+.rsvp-submit:hover {
+    background: #4d7fa8;
+
+    transform: translateY(-1px);
+}
+
+.rsvp-submit:disabled {
+    opacity: 0.6;
+
+    cursor: wait;
+
+    transform: none;
+}
+
+
+/* =========================
+   EXISTING RSVP
+========================= */
+
+.existing-rsvp {
+    margin-top: 25px;
+
+    padding: 20px;
+
+    border: 1px solid #ded8d1;
+
+    background: #ffffff;
+}
+
+.existing-rsvp p {
+    margin-bottom: 15px;
+
+    font-size: 13px;
+
+    color: #6d6762;
+}
+
+.existing-rsvp button {
+    padding: 10px 20px;
+
+    border: 1px solid #9a8d80;
+
+    background: transparent;
+
+    color: #5f5852;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    cursor: pointer;
+}
+
+
+/* =========================
+   RSVP SUCCESS
+========================= */
+
+.rsvp-success {
+    padding: 50px 30px;
+
+    background: #ffffff;
+
+    border: 1px solid #ded8d1;
+}
+
+.success-symbol {
+    margin-bottom: 20px;
+
+    font-size: 22px;
+
+    color: #c9a96a;
+}
+
+.rsvp-success h3 {
+    margin-bottom: 15px;
+
+    font-family: "Playfair Display", Georgia, serif;
+
+    font-size: 38px;
+    font-weight: 400;
+
+    color: #403a35;
+}
+
+.rsvp-success p {
+    font-size: 15px;
+    line-height: 1.8;
+
+    color: #6d6762;
+}
+
+
+/* =========================
+   RSVP MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+    .rsvp {
+        padding: 90px 20px;
+    }
+
+    .rsvp h2 {
+        font-size: 42px;
+    }
+
+    .rsvp-intro {
+        font-size: 14px;
+    }
+
+    .rsvp-code-row {
+        flex-direction: column;
+    }
+
+    .rsvp-code-row button {
+        width: 100%;
+    }
+
+    .rsvp-form-container {
+        margin-top: 45px;
+    }
+
+    .rsvp-options {
+        grid-template-columns: 1fr;
+    }
+
+    .guest-welcome h3 {
+        font-size: 30px;
+    }
+
+    .rsvp-question > p {
+        font-size: 22px;
+    }
+
+}
