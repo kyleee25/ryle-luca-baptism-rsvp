@@ -88,10 +88,10 @@ button:hover {
 
     padding: 120px 20px;
 
-    background:
+    /*background:
         url("../images/gallery-background2.png")
-        center center / cover no-repeat;
-
+        center center / cover no-repeat;*/
+    background: #f8f6f2;
     text-align: center;
 
 }
@@ -524,7 +524,7 @@ button:hover {
     padding: 120px 20px 100px;
 
     background-color: #f8fbfd;
-    background-image: url("../images/gallery-background.png");
+    background-image: url("../images/gallery-background-test3.png");
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
