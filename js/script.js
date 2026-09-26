@@ -517,14 +517,18 @@ function displayGuest(guest) {
      * has not submitted yet.
      */
 
+    const rsvpStatus =
+        String(guest.rsvp || "").trim();
+
+
     if (
-        guest.rsvp &&
-        guest.rsvp !== "Pending"
+        rsvpStatus &&
+        rsvpStatus !== "Pending"
     ) {
 
         const existingOption =
             document.querySelector(
-                `input[name="rsvp"][value="${guest.rsvp}"]`
+                `input[name="rsvp"][value="${rsvpStatus}"]`
             );
 
 
@@ -540,10 +544,30 @@ function displayGuest(guest) {
             guest.message || "";
 
 
+        /*
+         * Guest has already submitted.
+         * Hide the RSVP form and show
+         * the existing RSVP message.
+         */
+
+        rsvpForm.hidden =
+            true;
+
+
         existingRsvp.hidden =
             false;
 
     } else {
+
+        /*
+         * Guest has not submitted yet.
+         * Show the RSVP form and hide
+         * the existing RSVP message.
+         */
+
+        rsvpForm.hidden =
+            false;
+
 
         existingRsvp.hidden =
             true;
@@ -792,6 +816,9 @@ rsvpForm.addEventListener(
 changeRsvp.addEventListener(
     "click",
     () => {
+
+        rsvpForm.reset();
+
 
         rsvpForm.hidden =
             false;
