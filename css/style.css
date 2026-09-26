@@ -655,9 +655,9 @@ body {
 }
 
 .event-map-link:hover {
-    background: #5e8fb8;
+    background: #d8c2a0;
     color: #ffffff;
-
+    border-color: #d8c2a0;
     transform: translateY(-1px);
 }
 
