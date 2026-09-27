@@ -112,7 +112,7 @@ const galleryNext =
     document.getElementById("galleryNext");
 
 
-let currentGalleryIndex = 1;
+let currentGalleryIndex = 0;
 
 
 /* =========================
